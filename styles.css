@@ -1,0 +1,258 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Marcellus', serif;
+}
+
+body {
+    height: 100%;
+    background-image: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(222,222,222,1) 96%, rgba(195,195,195,1) 100%);
+}
+
+main {
+    position: relative;
+    top: 4rem;
+}
+
+
+/* Navigation */
+
+nav {
+    background-color: #e1e1e1;
+    height: 3rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 -3em 3em rgba(0, 0, 0, 0.1), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+nav img {
+    height: 3rem;
+    width: auto;
+}
+
+nav img {
+    float: left;
+}
+
+nav > ul > li {
+    display: inline-block;
+    font-size: 1.5rem;
+    padding: 0.75rem 0.75rem;
+    line-height: 1.5rem;
+    transition: background-color .22s, font-size .22s;
+}
+
+nav > ul {
+    float: right;
+}
+
+nav > ul > li > a {
+    text-decoration: none;
+    text-align: center;
+    color: black;
+}
+
+nav > ul > li:hover {
+    background-color: #717171;
+    font-size: 1.7rem;
+}
+
+html {
+    scroll-padding-top: 4rem;
+}
+
+/* General layout */
+
+#pagehead {
+    width: 98%;
+    padding: 0.5rem 1.5rem;
+}
+
+.section {
+    width: 98%;
+    margin: 1.5rem auto;
+    padding: 0.5rem 1.5rem;    
+    border: 1px solid black;
+    overflow: hidden;
+}
+
+
+.section > div {
+    margin-right: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+div.ball {
+    text-align: center;
+    float: left;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.description {
+    font-size: 0.7rem;
+    display: block;
+}
+
+.contentcont {
+    float: left;
+}
+
+/* Headlines */
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem; 
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+h4 {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+/* Color scales */
+
+.pcolor, .mcolor, .acolor {
+    border-radius: 100px;
+    width: 5rem;
+    height: 5rem;
+    display: inline-block;
+}
+
+#pcolor1 {
+    background-color: rgb(230,68,72);
+}
+
+#pcolor2 {
+    background-color: rgb(48,170,179);
+}
+
+#pcolor3 {
+    background-color: rgb(234,178,68);
+}
+
+#pcolor4 {
+    background-color: rgb(11,53,75);
+}
+
+#pcolor5 {
+    background-color: rgb(137,197, 199);
+}
+
+#mcolor1 {
+    background-color: rgba(226, 225, 223, 0.628);
+}
+
+#mcolor2 {
+    background-color: rgb(105,108,109);
+}
+
+#mcolor3 {
+    background-color: rgb(60,58,72);
+}
+
+#mcolor4 {
+    background-color: rgb(36,41,44);
+}
+
+/* Fonts */
+
+div.fonts {
+    float: left;
+}
+
+h1, h2, h3, h4, p {
+    font-family: 'Marcellus', serif;
+}
+
+div.fonts > h3, div.fonts > p {
+    font-family: "Nanum Gothic", sans-serif;
+}
+
+/* Text styles */
+
+.tablediv {
+    float: left;
+    padding-right: 5rem; 
+}
+
+tr, td {
+    text-align: left;
+    vertical-align: top;
+    padding-bottom: 2rem;
+}
+
+
+td.type, td.typename {
+    column-width: 5rem;
+}
+
+td.typename {
+    column-width: 17rem;
+}
+
+td.head1 {
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+table ul {
+    margin-left: 3rem; 
+}
+
+td.head2 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+td.head3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+td.head4 {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+td.paragraph {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+td.descriptiontext {
+    font-size: 0.7rem;
+    font-weight: 400;
+}
+
+/* Layout section */
+
+#flexcontainter {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.regbox {
+    border: 1px solid #717171;
+    padding: 1rem 3rem;
+    margin: 1rem; 
+    flex: 1;
+}
